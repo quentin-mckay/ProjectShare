@@ -39,7 +39,7 @@ Implements full-stack JWT user authentication, project tagging/filtering, and a 
 - PostgreSQL
 - Flask-SQLAlchemy (ORM)
 - OpenAI ChatGPT API (model gpt-3.5-turbo)
-- Cloudinary (image storage)
+- Cloudinary API (image storage/retrieval)
 
 **Tools**
 

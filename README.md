@@ -1,6 +1,6 @@
 # ProjectShare
 
-ProjectShare full-stack web app (React/Flask/Postgres) that allows developers to easily browse and share GitHub projects.
+A full-stack (React/Flask/Postgres) web app that allows developers to easily browse and share GitHub projects.
 
 - uses OpenAI's ChatGPT API for text generation and DALL-E API for text-to-image generation to streamline project sharing
 

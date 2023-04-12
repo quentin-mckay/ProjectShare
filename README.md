@@ -2,17 +2,17 @@
 
 A full-stack web application that allows developers to easily browse and share GitHub projects. 
 
-Uses OpenAI's GPT and DALL-E text and image generation API's to streamline sharing projects.
+- uses OpenAI's GPT and DALL-E text and image generation APIs to streamline sharing projects.
 
-Implements full-stack JWT user authentication, project tagging/filtering, and a comment system.
+- implements full-stack JWT user authentication, project tagging/filtering, and a comment system.
 
 <a href="https://projectshare-frontend-react.onrender.com/">View Live Project</a>
 
  Note: projects can take a few seconds to show up the first time as the backend "wakes up"
 
-[Frontend React Repo](https://github.com/quentin-mckay/ProjectShare-Frontend-React)
+[View Frontend React Repository](https://github.com/quentin-mckay/ProjectShare-Frontend-React)
 
-[Backend Flask Repository](https://github.com/quentin-mckay/ProjectShare-Backend-Flask)
+[View Backend Flask Repository](https://github.com/quentin-mckay/ProjectShare-Backend-Flask)
 
 
 <!-- <div style="display: grid; grid-template-columns: 1fr 1fr;">
@@ -50,29 +50,35 @@ Implements full-stack JWT user authentication, project tagging/filtering, and a 
 
 **Full-Stack Authentication**
 
-Anyone can view posted projects but only users who have signed up or logged in can post new projects.
+- Only users who have signed up or logged in can post new projects.
 
-Logged in users will see Edit/Delete buttons on their projects only.
+- Logged in users see Edit/Delete buttons on only their projects.
+
+- Logged in users see a button with their name in the upper right that can be clicked to show their projects
 
 **OpenAI Integration**
 
-When posting a project, users can click a button to have ChatGPT auto-fill the project description using just the GitHub repository link. The first sentence of the description will be seen on the project card but the entire description is visible on the project page.
+- When posting a project, users can click a button to have ChatGPT auto-fill the project description using just the GitHub repository link. The first sentence of the description will be seen on the project card but the entire description is visible on the project page.
 
-Users can also generate a cover image for their project by prompting OpenAI's DALL-E text-to-image generator (or let ChatGPT auto-generate a prompt). Images are stored using Cloudinary, a media management platform.
+- Users can also generate a cover image for their project by prompting OpenAI's DALL-E text-to-image generator (or let ChatGPT auto-generate a prompt). Images are stored using Cloudinary, a media management platform.
 
 **Tag System**
 
-Users can enter tags for their project. 
+- Users can enter tags for their project (uses a 3rd party package called )
 
-These tags can then be clicked either on the project card or project page to show only projects which have that tag.
+- These tags can then be clicked (either on the project card or project page) to show only projects which have that tag.
 
 **User Filtering**
 
-Clicking on a project author's name will filter projects by that author.
+- Clicking on a project author's name (either on the project card or project page) will show only projects by that author.
 
 **Comment System**
 
-Users can leave comments on other people projects.
+- Users can leave comments on other people projects.
+
+**Smooth Page Transitions**
+
+- Framer Motion was used to create subtle fades between pages.
 
 ![create project page](./images/projectshare_create.png)
 

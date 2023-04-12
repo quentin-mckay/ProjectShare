@@ -1,26 +1,25 @@
 # ProjectShare
 
-ProjectShare full-stack web app (React/Tailwind/Flask/Postgres) that allows developers to easily browse and share GitHub projects.
+ProjectShare full-stack web app (React/Flask/Postgres) that allows developers to easily browse and share GitHub projects.
 
-- uses OpenAI's GPT and DALL-E text and image generation APIs to streamline sharing projects.
+- uses OpenAI's ChatGPT API for text generation and DALL-E API for text-to-image generation to streamline project sharing
 
 - implements full-stack JWT user authentication, project tagging/filtering, and a comment system.
 
-<a href="https://projectshare-frontend-react.onrender.com/">View Live Project</a>
+<a href="https://projectshare-frontend-react.onrender.com/ " target="_blank">View Live Project</a>
 
  Note: projects can take a few seconds to show up the first time as the backend "wakes up"
 
-[View Frontend React Repository](https://github.com/quentin-mckay/ProjectShare-Frontend-React)
+[View Frontend React/Tailwind Repository](https://github.com/quentin-mckay/ProjectShare-Frontend-React)
 
-[View Backend Flask Repository](https://github.com/quentin-mckay/ProjectShare-Backend-Flask)
-
+[View Backend Flask/Postgres Repository](https://github.com/quentin-mckay/ProjectShare-Backend-Flask)
 
 <!-- <div style="display: grid; grid-template-columns: 1fr 1fr;">
 	<a href="https://github.com/quentin-mckay/ProjectShare-Frontend-React">View React Frontend</a>
 	<a href="https://github.com/quentin-mckay/ProjectShare-Backend-Flask">View Flask Backend</a>
 </div> -->
 
-![logged in](./images/projectshare_home.jpg)
+[![logged in](./images/projectshare_home.jpg)](https://projectshare-frontend-react.onrender.com/)
 
 ## Tech Used
 
@@ -39,6 +38,7 @@ ProjectShare full-stack web app (React/Tailwind/Flask/Postgres) that allows deve
 - PostgreSQL
 - Flask-SQLAlchemy (ORM)
 - OpenAI ChatGPT API (model gpt-3.5-turbo)
+- OpenAI DALL-E API (text-to-image generation)
 - Cloudinary API (image storage/retrieval)
 
 **Tools**
@@ -55,6 +55,8 @@ ProjectShare full-stack web app (React/Tailwind/Flask/Postgres) that allows deve
 - Logged in users see Edit/Delete buttons on only their projects.
 
 - Logged in users see a button with their name in the upper right that can be clicked to show their projects
+
+- browser remembers logged in user
 
 **OpenAI Integration**
 
@@ -74,11 +76,13 @@ ProjectShare full-stack web app (React/Tailwind/Flask/Postgres) that allows deve
 
 **Comment System**
 
-- Users can leave comments on other people projects.
+- Users can leave comments on other projects.
 
-**Smooth Page Transitions**
+**Page Transitions**
 
 - Framer Motion was used to create subtle fades between pages.
+
+## Screenshots
 
 ![create project page](./images/projectshare_create.png)
 

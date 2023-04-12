@@ -1,6 +1,6 @@
 # ProjectShare
 
-A full-stack web application that allows developers to easily browse and share GitHub projects. 
+ProjectShare full-stack web app (React/Tailwind/Flask/Postgres) that allows developers to easily browse and share GitHub projects.
 
 - uses OpenAI's GPT and DALL-E text and image generation APIs to streamline sharing projects.
 
